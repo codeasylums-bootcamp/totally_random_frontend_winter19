@@ -1,6 +1,6 @@
 # totally_random_frontend_winter19
 
-<!-- *********************************************
+*********************************************
 
 PROJECT DESCRIPTION
 
@@ -26,5 +26,5 @@ MEMBER DESCRIPTION
 
 1. Rahul "hrahul2605" Halder
 2. Parth "parthsharma29" Sharma
-3. Manik "charlie-2201" Agarwal -->
+3. Manik "charlie-2201" Agarwal
 
