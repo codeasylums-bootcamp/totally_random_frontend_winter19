@@ -26,7 +26,7 @@
 
 setTimeout(function(){
  document.location.href = "waterfall/firstpage.html";
-}, 3000);
+}, 2000);
 
 //  console.log(beer)
 // beerLoad.addEventListener("click", () => {
