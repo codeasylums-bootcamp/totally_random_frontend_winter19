@@ -1,6 +1,8 @@
 const row = document.querySelector(".row");
 const beerLoad = document.querySelector("#beerLoading");
 const information = document.querySelector(".information");
+
+// const id1 = document.querySelector("")
 let beer;
 
 let allBeer = "";
@@ -44,44 +46,413 @@ const fecthBeers = async () => {
   </div> `;
     allInfo += picture;
   }
-  
+
   information.innerHTML = `
   
-          
-        <div class="card text-white" style="max-width: 500px; max-height:200px; margin-left:72%; box-shadow:5px 5px 5px black; background-image: linear-gradient(45deg,brown,red,yellow); position:absolute" >
-          <div class="row no-gutters" >
-            <div class="col-md-12 ">
-              <div class="card-body ">
-                <h5 class="card-title ">${beer[20].name}</h5>
-                <h6 class="card-text">
-                  ${beer[20].description}
-                </h6>
-                <p class="card-text">
-                  <small >${beer[20].tagline}</small>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+          <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
 
-        <div class="card text-white" style="margin-left:1250px ;max-width: 500px; max-height:200px; box-shadow:5px 5px 5px black; background-image: linear-gradient(45deg,brown,red,yellow); z-index:-1; " >
-          <div class="row no-gutters" >
-            <div class="col-md-12 ">
-              <div class="card-body ">
-                <h5 class="card-title ">${beer[21].name}</h5>
-                <h6 class="card-text">
-                  ${beer[21].description}
-                </h6>
-                <p class="card-text">
-                  <small >${beer[21].tagline}</small>
-                </p>
-              </div>
+  <div class="mini-card-grid">
+      <article
+        class="mini-card module module-article article"
+        id="${beer[0].id}"
+      >
+        <header class="mini-article-card-header">
+          <div class="mini-article-card-title">
+            <div class="mini-article-subhead">
+              ${beer[0].name}
             </div>
+            <h2 class="">
+              ${beer[0].description}
+            </h2>
           </div>
-        </div>
+ 
+ 
+ <br>         <div class="mini-article-meta">
+          ${beer[0].tagline}
+        </div>         <br>
+         
+       
+      </article>
 
+      <article
+        class="mini-card module module-article article"
+        id="${beer[1].id}"
+      >
+        <header class="mini-article-card-header">
+          <div class="mini-article-card-title">
+            <div class="mini-article-subhead">
+              ${beer[1].name}
+            </div>
+            <h2 class="">
+              ${beer[1].description}
+            </h2>
+          </div>
+ 
+ 
+ <br>         <div class="mini-article-meta">
+          ${beer[1].tagline}
+        </header>         <br>
+         
+        </article>
+
+      <article
+        class="mini-card module module-article article"
+        id="${beer[2].id}"
+      >
+        <header class="mini-article-card-header">
+          <div class="mini-article-card-title">
+            <div class="mini-article-subhead">
+              ${beer[2].name}
+            </div>
+            <h2 class="">
+              ${beer[2].description}
+            </h2>
+          </div>
+          <br>
+           <div class="mini-article-meta">
+          ${beer[2].tagline}
+        </div>
+        </header>
+       
+      </article>
+
+      <article
+        class="mini-card module module-article article"
+        id="${beer[4].id}"
+      >
+        <header class="mini-article-card-header">
+          <div class="mini-article-card-title">
+            <div class="mini-article-subhead">
+              ${beer[4].name}
+            </div>
+            <h2 class="">
+              ${beer[4].description}
+            </h2>
+          </div>
+          <br>
+           <div class="mini-article-meta">
+          ${beer[4].tagline}
+        </div>
+        </header>
+       
+      </article>
+
+      <article
+        class="mini-card module module-article article"
+        id="${beer[5].id}"
+      >
+        <header class="mini-article-card-header">
+          <div class="mini-article-card-title">
+            <div class="mini-article-subhead">
+              ${beer[5].name}
+            </div>
+            <h2 class="">
+              ${beer[5].description}
+            </h2>
+          </div>
+          <br>
+           <div class="mini-article-meta">
+          ${beer[5].tagline}
+        </div>
+        </header>
+       
+      </article>
+
+
+
+      <article
+        class="mini-card module module-article article"
+        id="${beer[7].id}"
+      >
+        <header class="mini-article-card-header">
+          <div class="mini-article-card-title">
+            <div class="mini-article-subhead">
+              ${beer[7].name}
+            </div>
+            <h2 class="">
+              ${beer[7].description}
+            </h2>
+          </div>
+          <br>
+           <div class="mini-article-meta">
+          ${beer[7].tagline}
+        </div>
+        </header>
+       
+      </article>
+
+
+
+
+
+
+      <article
+        class="mini-card module module-article article"
+        id="${beer[9].id}"
+      >
+        <header class="mini-article-card-header">
+          <div class="mini-article-card-title">
+            <div class="mini-article-subhead">
+              ${beer[9].name}
+            </div>
+            <h2 class="">
+              ${beer[9].description}
+            </h2>
+          </div>
+          <br>
+           <div class="mini-article-meta">
+          ${beer[9].tagline}
+        </div>
+        </header>
+       
+      </article>
+
+
+            <article
+        class="mini-card module module-article article"
+        id="${beer[10].id}"
+      >
+        <header class="mini-article-card-header">
+          <div class="mini-article-card-title">
+            <div class="mini-article-subhead">
+              ${beer[10].name}
+            </div>
+            <h2 class="">
+              ${beer[10].description}
+            </h2>
+          </div>
+          <br>
+           <div class="mini-article-meta">
+          ${beer[10].tagline}
+        </div>
+        </header>
+       
+      </article>
+
+      <article
+        class="mini-card module module-article article"
+        id="${beer[11].id}"
+      >
+        <header class="mini-article-card-header">
+          <div class="mini-article-card-title">
+            <div class="mini-article-subhead">
+              ${beer[11].name}
+            </div>
+            <h2 class="">
+              ${beer[11].description}
+            </h2>
+          </div>
+          <br>
+           <div class="mini-article-meta">
+          ${beer[11].tagline}
+        </div>
+        </header>
+       
+      </article>
+
+
+      <article
+        class="mini-card module module-article article"
+        id="${beer[14].id}"
+      >
+        <header class="mini-article-card-header">
+          <div class="mini-article-card-title">
+            <div class="mini-article-subhead">
+              ${beer[14].name}
+            </div>
+            <h2 class="">
+              ${beer[14].description}
+            </h2>
+          </div>
+          <br>
+           <div class="mini-article-meta">
+          ${beer[14].tagline}
+        </div>
+        </header>
+       
+      </article>
+
+      <article
+        class="mini-card module module-article article"
+        id="${beer[15].id}"
+      >
+        <header class="mini-article-card-header">
+          <div class="mini-article-card-title">
+            <div class="mini-article-subhead">
+              ${beer[15].name}
+            </div>
+            <h2 class="">
+              ${beer[15].description}
+            </h2>
+          </div>
+          <br>
+           <div class="mini-article-meta">
+          ${beer[15].tagline}
+        </div>
+        </header>
+       
+      </article>
+
+      <article
+        class="mini-card module module-article article"
+        id="${beer[16].id}"
+      >
+        <header class="mini-article-card-header">
+          <div class="mini-article-card-title">
+            <div class="mini-article-subhead">
+              ${beer[16].name}
+            </div>
+            <h2 class="">
+              ${beer[16].description}
+            </h2>
+          </div>
+          <br>
+           <div class="mini-article-meta">
+          ${beer[16].tagline}
+        </div>
+        </header>
+       
+      </article>
+
+      <article
+        class="mini-card module module-article article"
+        id="${beer[17].id}"
+      >
+        <header class="mini-article-card-header">
+          <div class="mini-article-card-title">
+            <div class="mini-article-subhead">
+              ${beer[17].name}
+            </div>
+            <h2 class="">
+              ${beer[17].description}
+            </h2>
+          </div>
+          <br>
+           <div class="mini-article-meta">
+          ${beer[17].tagline}
+        </div>
+        </header>
+       
+      </article>
+
+       <article
+        class="mini-card module module-article article"
+        id="${beer[20].id}"
+      >
+        <header class="mini-article-card-header">
+          <div class="mini-article-card-title">
+            <div class="mini-article-subhead">
+              ${beer[20].name}
+            </div>
+            <h2 class="">
+              ${beer[20].description}
+            </h2>
+          </div>
+          <br>
+           <div class="mini-article-meta">
+          ${beer[20].tagline}
+        </div>
+        </header>
+       
+      </article>
+
+       <article
+        class="mini-card module module-article article"
+        id="${beer[21].id}"
+      >
+        <header class="mini-article-card-header">
+          <div class="mini-article-card-title">
+            <div class="mini-article-subhead">
+              ${beer[21].name}
+            </div>
+            <h2 class="">
+              ${beer[21].description}
+            </h2>
+          </div>
+          <br>
+           <div class="mini-article-meta">
+          ${beer[21].tagline}
+        </div>
+        </header>
+       
+      </article>
+
+       <article
+        class="mini-card module module-article article"
+        id="${beer[22].id}"
+      >
+        <header class="mini-article-card-header">
+          <div class="mini-article-card-title">
+            <div class="mini-article-subhead">
+              ${beer[22].name}
+            </div>
+            <h2 class="">
+              ${beer[22].description}
+            </h2>
+          </div>
+          <br>
+           <div class="mini-article-meta">
+          ${beer[22].tagline}
+        </div>
+        </header>
+       
+      </article>
+
+       <article
+        class="mini-card module module-article article"
+        id="${beer[23].id}"
+      >
+        <header class="mini-article-card-header">
+          <div class="mini-article-card-title">
+            <div class="mini-article-subhead">
+              ${beer[23].name}
+            </div>
+            <h2 class="">
+              ${beer[23].description}
+            </h2>
+          </div>
+          <br>
+           <div class="mini-article-meta">
+          ${beer[23].tagline}
+        </div>
+        </header>
+       
+      </article>
+
+
+       <article
+        class="mini-card module module-article article"
+        id="${beer[24].id}"
+      >
+        <header class="mini-article-card-header">
+          <div class="mini-article-card-title">
+            <div class="mini-article-subhead">
+              ${beer[24].name}
+            </div>
+            <h2 class="">
+              ${beer[24].description}
+            </h2>
+          </div>
+          <br>
+           <div class="mini-article-meta">
+          ${beer[24].tagline}
+        </div>
+        </header>
+       
+      </article>
+   
+  <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  </a>
+</div> 
       
-  
+    </div>
+
+
   
 
 `;
@@ -104,6 +475,9 @@ async function generic(val) {
   for (let i = 0; i < 25; i++) {
     if (beer[i].id == val) {
       // information.innerHTML = `${beer[i].name}`;
+      const id1 = document.querySelector("#val")
+      console.log(id1);
+      
     }
   }
 
